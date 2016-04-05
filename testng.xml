@@ -1,0 +1,16 @@
+<suite name="TestNGSuiteName">
+	<test name="testnamegrouping">
+		<groups>
+			<define name="All">
+				<include name="people" />
+				<include name="animal" />
+			</define>
+			<run>
+				<include name="All" />
+				<classes>
+					<class name="demo.selenium.order.Grouping" />
+					<class name="demo.selenium.order.TestOrder" />
+					<class name="demo.selenium.order.DependentTest" />
+				</classes>
+	</test>
+</suite>
